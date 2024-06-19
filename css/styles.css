@@ -1,6 +1,6 @@
 :root {
-  --color-primary: #2584ff;
-  --color-secondary: #00d9ff;
+  --color-primary: #00d9ff;
+  --color-secondary: #2584ff;
   --color-accent: #ff3400;
   --color-headings: #1b0760;
   --color-body: #918ca4;
@@ -72,6 +72,7 @@ a {
 .link-arrow::after {
   content: "-->";
   margin-left: 5px;
+  margin-bottom: 5rem;
   transition: margin(0.15s);
 }
 /*targetting an element inside the other element in hover state*/
@@ -82,5 +83,39 @@ a {
 @media screen and (min-width: 1024px) {
   .link-arrow {
     font-size: 1.5rem;
+  }
+}
+
+/*Badges */
+
+.badge {
+  border-radius: 20px;
+  padding: 0.5rem 2rem;
+  font-weight: 600;
+  /*no matter what the content in our badge shoul be only one line */
+  white-space: nowrap;
+  color: #fff;
+  font-size: 2rem;
+}
+
+.badge--primary {
+  background: var(--color-primary);
+}
+
+.badge--secondary {
+  background: var(--color-secondary);
+}
+
+.badge--small {
+  font-size: 1.6rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .badge {
+    font-size: 1.5rem;
+  }
+
+  .badge--small {
+    font-size: 1.2rem;
   }
 }
