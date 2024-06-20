@@ -4,6 +4,8 @@
   --color-accent: #ff3400;
   --color-headings: #1b0760;
   --color-body: #918ca4;
+  --border-color: #ccc;
+  --border-radius: 30px;
 }
 /*making all element to have box-sizing 0f border box in the entire document*/
 *,
@@ -243,7 +245,7 @@ a {
 .input {
   padding: 1.5rem 3.5rem;
   border: 1px solid #ccc;
-  border-radius: 30px;
+  border-radius: var(--border-radius);
   outline: 0;
   color: var(--color-headings);
   font-size: 2rem;
@@ -252,6 +254,22 @@ a {
 /*changing placeholder properties*/
 ::placeholder {
   color: #bbb9c9;
+}
+/*defining input-group after wrapping our input into a div*/
+.input-group {
+  border-radius: var(--border-radius);
+  border: 1px solid var(--border-color);
+  display: flex;
+}
+
+.input-group .input {
+  border: 0;
+  flex-grow: 1;
+  padding: 1.5rem 1rem;
+}
+/*adjustin our marrgin between the div boder and our button*/
+.input-group .btn {
+  margin: 4px;
 }
 
 @media screen and (min-width: 1024px) {
