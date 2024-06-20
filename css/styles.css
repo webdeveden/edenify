@@ -5,6 +5,12 @@
   --color-headings: #1b0760;
   --color-body: #918ca4;
 }
+/*making all element to have box-sizing 0f border box in the entire document*/
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
 
 /* Typography */
 
@@ -169,4 +175,65 @@ a {
   width: 64px;
   height: 64px;
   border-radius: 100%;
+}
+
+/*Button*/
+
+.btn {
+  padding: 2rem 3rem;
+  color: #fff;
+  font-size: 1.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  border-radius: 30px;
+  border: 0;
+  cursor: pointer;
+  white-space: nowrap;
+  margin: 1rem 0;
+  text-align: center;
+}
+
+.btn--primary {
+  background: var(--color-primary);
+}
+.btn--primary:hover {
+  background: #fd4516;
+}
+
+.btn--secondary {
+  background: var(--color-secondary);
+}
+.btn--secondary:hover {
+  background: #00c8eb;
+}
+
+.btn--accent {
+  background: var(--color-accent);
+}
+
+.btn--accent:hover {
+  background: #ffea00;
+}
+
+.btn__block {
+  width: 100%;
+  /*ancho element are inline by default , inline-block will make the 100% width to work*/
+  display: inline-block;
+}
+
+.btn__outline {
+  background: #fff;
+  border: 2px solid var(--color-headings);
+  color: var(--color-headings);
+}
+
+.btn__outline:hover {
+  background: var(--color-headings);
+  color: #fff;
+}
+
+@media screen and (min-width: 1024px) {
+  .btn {
+    font-size: 1.5rem;
+  }
 }
