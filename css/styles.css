@@ -116,6 +116,7 @@ a {
 
 .badge--small {
   font-size: 1.6rem;
+  padding: 0.5rem 1.5rem;
 }
 
 @media screen and (min-width: 1024px) {
@@ -305,4 +306,65 @@ a {
 .card--secondary .card__header {
   background: var(--color-secondary);
   color: #fff;
+}
+
+.card--primary .badge--primary {
+  background: #02cdf1;
+}
+
+/*Plans*/
+
+.plan__name {
+  font-weight: 500;
+  margin: 0;
+  color: #fff;
+  font-size: 2.4rem;
+}
+
+.plan__price {
+  font-size: 6rem;
+}
+
+.plan__billing-cycle {
+  font-size: 2.4rem;
+  font-weight: 300;
+  opacity: 0.8; /*80% opacity*/
+  margin-right: 1rem;
+}
+
+.plan__description {
+  font-size: 2rem;
+  font-weight: 300;
+  letter-spacing: 1px;
+  white-space: nowrap;
+  display: block;
+}
+
+.plan .list__item {
+  margin-bottom: 2rem;
+}
+/*implimenting the popular image in our card , create a plan--popular class on plan level */
+.plan--popular .card__header {
+  position: relative;
+}
+
+.plan--popular .card--primary .card__header::before {
+  content: url(../images/popular.svg);
+  position: absolute;
+  width: 40px;
+  right: 5%;
+  display: inline-block;
+  top: -2px;
+}
+
+@media screen and (min-width: 1024px) {
+  .plan__name {
+    font-size: 1.4rem;
+  }
+  .plan__price {
+    font-size: 5rem;
+  }
+  .plan__billing-cycle {
+    font-size: 1.6rem;
+  }
 }

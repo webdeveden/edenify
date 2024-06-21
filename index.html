@@ -26,11 +26,6 @@
     <span class="badge badge--primary badge--small">10% Off</span>
     <span class="badge badge--secondary">20% Off</span>
     <!--formula = ul.list>li{items $}*3-->
-    <ul class="list list--inline">
-      <li class="list__item">items 1</li>
-      <li class="list__item">items 2</li>
-      <li class="list__item">items 3</li>
-    </ul>
     <ul class="list list--tick">
       <li class="list__item">items 1</li>
       <li class="list__item">items 2</li>
@@ -53,22 +48,35 @@
       <button class="btn btn--accent">Search</button>
     </div>
     <div class="card-container">
-      <div class="card card--primary">
-        <header class="card__header">Card Title</header>
-        <div class="card__body">
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. At minima
-          impedit sequi animi dolorum blanditiis possimus alias eveniet pariatur
-          explicabo ullam molestias qui corrupti aperiam, nostrum cupiditate
-          veniam deserunt! Dolorum?
+      <div class="plan plan--popular">
+        <div class="card card--primary">
+          <header class="card__header">
+            <h3 class="plan__name">Entry</h3>
+            <span class="plan__price">$14</span>
+            <span class="plan__billing-cycle">/month</span>
+            <span class="badge badge--primary badge--small">10% OFF</span>
+            <span class="plan__description">Easy start on the Cloud</span>
+          </header>
+          <div class="card__body">
+            <ul class="list list--tick">
+              <li class="list__item">Unlimited Website</li>
+              <li class="list__item">Unlimited Bandwidth</li>
+              <li class="list__item">100GB SSD Storage</li>
+              <li class="list__item">3GB RAM</li>
+            </ul>
+            <button class="btn btn--primary btn__block btn__outline">
+              Buy Now
+            </button>
+          </div>
         </div>
-      </div>
-      <div class="card card--secondary">
-        <header class="card__header">Card Title</header>
-        <div class="card__body">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat,
-          ipsum. Aperiam, praesentium tempore blanditiis ipsum asperiores iste
-          fugit, et inventore aspernatur error eaque illo ducimus distinctio
-          deserunt nisi quidem veniam.
+        <div class="card card--secondary">
+          <header class="card__header">Card Title</header>
+          <div class="card__body">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat,
+            ipsum. Aperiam, praesentium tempore blanditiis ipsum asperiores iste
+            fugit, et inventore aspernatur error eaque illo ducimus distinctio
+            deserunt nisi quidem veniam.
+          </div>
         </div>
       </div>
     </div>
