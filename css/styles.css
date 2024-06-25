@@ -561,3 +561,40 @@ a {
   max-height: 100vh;
   opacity: 1;
 }
+
+/* Block */
+
+.block {
+  /*u can also define a variable in a partiocular rule so you can perform some calculation when needed using calc() 
+  fucntion */
+  --padding-vertical: 6rem;
+  padding: var(--padding-vertical) 2rem;
+  border: 2px solid red;
+}
+.block__header {
+  text-align: center;
+}
+.block__heading {
+  margin-top: 0;
+}
+
+.block--dark {
+  background: black;
+  color: #7b858b;
+}
+
+.block--dark .block__heading {
+  color: #fff;
+}
+
+.block--skewed-right {
+  /* top left ,top rigth, button left ,buttom right */
+  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 80%);
+  padding-bottom: calc(var(--padding-vertical) + 4rem);
+}
+
+/* using this class and property no matter how big our screen will be it will only cover 1140px on the screen */
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
