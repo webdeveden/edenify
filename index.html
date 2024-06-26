@@ -33,7 +33,7 @@
     </ul>
     <span class="icon-container">
       <svg class="icon icon--primary">
-        <use xlink:href="../icons/sprite.svg#clock"></use>
+        <use xlink:href="../images/sprite.svg#clock"></use>
       </svg>
     </span>
     <button class="btn btn--primary btn__block">Get started</button>
@@ -130,7 +130,7 @@
           />
           <span class="icon-container icon-container--accent">
             <svg class="icon icon--white icon--small">
-              <use xlink:href="../icons/sprite.svg#growth"></use>
+              <use xlink:href="../images/sprite.svg#growth"></use>
             </svg>
           </span>
         </div>
@@ -188,7 +188,6 @@
       cupiditate est velit laboriosam amet accusantium incidunt rem natus
       dignissimos.
     </div>
-    <script src="./js/main.js"></script>
     <section class="block container">
       <header class="block__header">
         <h2 class="block__heading">Heading 2</h2>
@@ -208,7 +207,7 @@
           </div>
         </div>
     </section>
-    <section class="block block--dark block--skewed-right">
+    <section class="block block--dark block--skewed-left">
       <div class="container">
         <h2 class="block__heading">Heading 2</h2>
         <p>
@@ -217,5 +216,18 @@
         </p>
       </div>
     </section>
+    <nav class="nav collapsible">
+      <a class="nav__brand" href="/"><img src="./images/logo.svg" alt=""></a>
+      <svg class="icon icon--white nav__toggler">
+        <use xlink:href="../images/sprite.svg#menu"></use>
+      </svg>
+      <ul class="list nav__list collapsible__content">
+        <li class="nav__item"><a href="#">Hosting</a></li>
+        <li class="nav__item"><a href="#">VPS</a></li>
+        <li class="nav__item"><a href="#">Domain</a></li>
+        <li class="nav__item"><a href="#">Pricing</a></li>
+      </ul>
+    </nav>
+    <script src="./js/main.js"></script>
   </body>
 </html>

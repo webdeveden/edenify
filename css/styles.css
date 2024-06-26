@@ -592,9 +592,78 @@ a {
   clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 80%);
   padding-bottom: calc(var(--padding-vertical) + 4rem);
 }
+.block--skewed-left {
+  /* top left ,top rigth, button left ,buttom right */
+  clip-path: polygon(0% 100%, 100% 74%, 100% 0%, 0% 0%);
+  padding-bottom: calc(var(--padding-vertical) + 4rem);
+}
 
 /* using this class and property no matter how big our screen will be it will only cover 1140px on the screen */
 .container {
   max-width: 1140px;
   margin: 0 auto;
+}
+
+/* Navigation bar */
+
+.nav {
+  margin-top: 10rem;
+  display: flex;
+  padding: 0 1rem;
+  background: black;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.nav__list {
+  width: 100%;
+  margin: 0;
+}
+
+.nav__item {
+  padding: 0.5rem 2rem;
+  border-bottom: 1px solid #232323;
+}
+
+.nav__item > a {
+  color: #d3d0db;
+  transition: color 0.3s;
+}
+.nav__item > a:hover {
+  color: #fff;
+}
+
+.nav__toggler {
+  opacity: 0.5;
+  cursor: pointer;
+  transition: box-shadow 0.15s;
+}
+/*making this very specific to only nav element (no space between .nav and .collapsible--expanded*/
+.nav.collapsible--expanded .nav__toggler {
+  opacity: 1;
+  box-shadow: 0 0 0 3px lightgray;
+  border-radius: 6px;
+}
+.nav__brand {
+  transform: translateY(5px);
+}
+
+@media screen and (min-width: 768px) {
+  .nav__toggler {
+    display: none;
+  }
+
+  .nav__list {
+    width: auto;
+    display: flex;
+    font-size: 1.5rem;
+    /*making our list visble */
+    max-height: 100%;
+    opacity: 1;
+  }
+
+  .nav__item {
+    border: 0;
+  }
 }
