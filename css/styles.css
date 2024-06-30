@@ -34,6 +34,7 @@ h2,
 h3 {
   color: var(--color-headings);
   margin-bottom: 1rem;
+  line-height: 1.1;
 }
 
 h1 {
@@ -145,7 +146,7 @@ a {
 }
 
 .list--tick {
-  list-style-image: url(../icons/tick.svg);
+  list-style-image: url(../images/sprite.svg#tick);
   /*making the tick visible*/
   padding-left: 3rem;
 }
@@ -569,7 +570,6 @@ a {
   fucntion */
   --padding-vertical: 6rem;
   padding: var(--padding-vertical) 2rem;
-  border: 2px solid red;
 }
 .block__header {
   text-align: center;
@@ -665,5 +665,34 @@ a {
 
   .nav__item {
     border: 0;
+  }
+}
+
+/*Hero */
+.hero {
+  /* top left ,top rigth, button left ,buttom right */
+  clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 0% 100%);
+  padding-bottom: calc(var(--padding-vertical) + 5rem);
+}
+
+.hero__tagline {
+  font-size: 2rem;
+  color: #7b858b;
+  letter-spacing: 1.7px;
+  margin-top: 2rem;
+  margin-bottom: 5rem;
+}
+.hero__image {
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .hero {
+    padding-top: 0;
+  }
+
+  .hero__content {
+    text-align: left;
+    align-self: center;
   }
 }

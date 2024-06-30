@@ -201,14 +201,15 @@
           <header class="card__header">Card Title</header>
           <div class="card__body">
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. At minima
-            impedit sequi animi dolorum blanditiis possimus alias eveniet pariatur
-            explicabo ullam molestias qui corrupti aperiam, nostrum cupiditate veniam
-            deserunt! Dolorum?
+            impedit sequi animi dolorum blanditiis possimus alias eveniet
+            pariatur explicabo ullam molestias qui corrupti aperiam, nostrum
+            cupiditate veniam deserunt! Dolorum?
           </div>
         </div>
+      </div>
     </section>
     <section class="block block--dark block--skewed-left">
-      <div class="container">
+      <div>
         <h2 class="block__heading">Heading 2</h2>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus,
@@ -216,8 +217,8 @@
         </p>
       </div>
     </section>
-    <nav class="nav collapsible">
-      <a class="nav__brand" href="/"><img src="./images/logo.svg" alt=""></a>
+    <nav class="nav collapsible collapsible--expanded">
+      <a class="nav__brand" href="/"><img src="./images/logo.svg" alt="" /></a>
       <svg class="icon icon--white nav__toggler">
         <use xlink:href="../images/sprite.svg#menu"></use>
       </svg>
@@ -228,6 +229,31 @@
         <li class="nav__item"><a href="#">Pricing</a></li>
       </ul>
     </nav>
+    <section class="block block--dark block--skewed-left hero">
+      <div class="container-hero">
+        <div class="grid grid--1x2">
+          <header class="block__header hero__content">
+            <h1 class="block__heading">Cloud Hosting for Pros</h1>
+            <p class="hero__tagline">
+              Deploy your websites in less than 60 seconds.
+            </p>
+            <a href="#" class="btn btn--accent btn--stretched">Get started</a>
+          </header>
+          <!--Optimizing the image using photoshop and cloudconvert.com depending on the size needed for it-->
+          <picture>
+            <source
+              type="image/webp"
+              srcset="images/banner.webp 1x, images/banner@2x.webp 2x"
+            />
+            <source
+              type="image/png"
+              srcset="images/banner.png 1x, images/banner@2x.png 2x"
+            />
+            <img src="./images/banner.png" alt="" class="hero__image" />
+          </picture>
+        </div>
+      </div>
+    </section>
     <script src="./js/main.js"></script>
   </body>
 </html>
