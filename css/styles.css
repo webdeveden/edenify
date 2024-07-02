@@ -176,6 +176,9 @@ a {
 .icon--primary {
   fill: var(--color-primary);
 }
+.icon--secondary {
+  fill: var(--color-secondary);
+}
 .icon--white {
   fill: #fff;
 }
@@ -760,4 +763,32 @@ a {
 .block-plans .grid {
   /* the 8rem help the the card to dont overlap in mobile view */
   gap: 8rem 4rem;
+}
+
+/*Features Block */
+
+.feature {
+  margin: 6rem 4rem;
+}
+
+.feature__heading {
+  margin-top: 1rem;
+}
+
+.feature__image {
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  /* this rule target feature__content apearing on the even row and change the order of the grid where the second
+  element become the first*/
+  .feature:nth-of-type(even) .feature__content {
+    order: 2;
+  }
+  .feature:nth-of-type(odd) .feature__content {
+    margin-right: 6rem;
+  }
+  .feature:nth-of-type(even) .feature__content {
+    margin-left: 6rem;
+  }
 }
