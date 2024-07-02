@@ -15,6 +15,11 @@
   box-sizing: border-box;
 }
 
+::selection {
+  background: var(--color-secondary);
+  color: #fff;
+}
+
 /* Typography */
 
 html {
@@ -428,6 +433,7 @@ a {
 
 .media__title {
   margin-top: 0;
+  color: #fff;
 }
 
 .media__image {
@@ -620,7 +626,7 @@ a {
 
 .block--skewed-right {
   /* top left ,top rigth, button left ,buttom right */
-  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 80%);
+  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 90%);
   padding-bottom: calc(var(--padding-vertical) + 4rem);
 }
 .block--skewed-left {
@@ -791,4 +797,21 @@ a {
   .feature:nth-of-type(even) .feature__content {
     margin-left: 6rem;
   }
+}
+
+/* Showcase block */
+
+.showcase--block {
+  gap: 4rem;
+}
+
+.showcase__heading {
+  color: #fff;
+  font-weight: bold;
+  margin-top: 0;
+  margin-bottom: 4rem;
+}
+
+.showcase__image {
+  width: 100%;
 }
