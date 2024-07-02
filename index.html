@@ -13,210 +13,7 @@
     <link rel="stylesheet" href="./css/normalize.css" />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
-  <body class="container">
-    <!--formular (h${Heading $}*3)-->
-    <h1>Heading 1</h1>
-    <h2>Heading 2</h2>
-    <h3>Heading 3</h3>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum eligendi
-      harum tempora quod esse soluta sequi tenetur, eaque pariatur optio.
-    </p>
-    <a href="#" class="link-arrow">Learn more</a>
-    <span class="badge badge--primary badge--small">10% Off</span>
-    <span class="badge badge--secondary">20% Off</span>
-    <!--formula = ul.list>li{items $}*3-->
-    <ul class="list list--tick">
-      <li class="list__item">items 1</li>
-      <li class="list__item">items 2</li>
-      <li class="list__item">items 3</li>
-    </ul>
-    <span class="icon-container">
-      <svg class="icon icon--primary">
-        <use xlink:href="../images/sprite.svg#clock"></use>
-      </svg>
-    </span>
-    <button class="btn btn--primary btn__block">Get started</button>
-    <a href="#" class="btn btn--accent btn__block"> search </a>
-    <button class="btn btn--primary btn__block btn__outline">Buy Now</button>
-    <div class="input-group">
-      <input
-        type="text"
-        class="input"
-        placeholder="Enter domain name here ..."
-      />
-      <button class="btn btn--accent">Search</button>
-    </div>
-    <div class="card-container">
-      <div class="plan plan--popular">
-        <div class="card card--primary">
-          <header class="card__header">
-            <h3 class="plan__name">Entry</h3>
-            <span class="plan__price">$14</span>
-            <span class="plan__billing-cycle">/month</span>
-            <span class="badge badge--primary badge--small">10% OFF</span>
-            <span class="plan__description">Easy start on the Cloud</span>
-          </header>
-          <div class="card__body">
-            <ul class="list list--tick">
-              <li class="list__item">Unlimited Website</li>
-              <li class="list__item">Unlimited Bandwidth</li>
-              <li class="list__item">100GB SSD Storage</li>
-              <li class="list__item">3GB RAM</li>
-            </ul>
-            <button class="btn btn--primary btn__block btn__outline">
-              Buy Now
-            </button>
-          </div>
-        </div>
-        <div class="card card--secondary">
-          <header class="card__header">Card Title</header>
-          <div class="card__body">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat,
-            ipsum. Aperiam, praesentium tempore blanditiis ipsum asperiores iste
-            fugit, et inventore aspernatur error eaque illo ducimus distinctio
-            deserunt nisi quidem veniam.
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="media">
-      <div class="media__image">
-        <svg class="icon icon--primary">
-          <use xlink:href="../icons/sprite.svg#snap"></use>
-        </svg>
-      </div>
-      <div class="media__body">
-        <h3 class="media__title">Easy Start & Managed Update</h3>
-        <p>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam beatae
-          dolorem nulla labore sed itaque voluptatem. Magni, repellat.
-          Consequatur obcaecati minima quod temporibus ducimus deleniti suscipit
-          qui aspernatur explicabo. Officiis!
-        </p>
-      </div>
-    </div>
-    <!--To represent a quote use either q (inline) or blockquote(block)-->
-    <blockquote class="quote">
-      <p class="quote__text">
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo voluptas
-        aliquid earum quasi magni harum! Minima animi recusandae perferendis
-        sint, accusamus officia porro adipisci asperiores nihil ex quo
-        voluptatum eaque corrupti praesentium delectus et modi est iure eveniet
-        provident sequi magnam corporis accusantium rerum. Magnam ratione quod
-        sit reiciendis similique!
-      </p>
-      <footer>
-        <div class="media">
-          <div class="media__image">
-            <svg class="icon icon--primary quote__line">
-              <use xlink:href="../icons/sprite.svg#line"></use>
-            </svg>
-          </div>
-          <div class="media__body">
-            <h3 class="media__title quote__author">Eden Abwe</h3>
-            <p class="media__text quote-author__company">Eden Company CEO</p>
-          </div>
-        </div>
-      </footer>
-    </blockquote>
-    <div class="card testimonial--container container">
-      <div class="grid grid--1x2">
-        <div class="testimonial__image-container">
-          <img
-            class="testimonial__image"
-            src="./images/testimonial.jpg"
-            alt="a customer with a smilling face"
-          />
-          <span class="icon-container icon-container--accent">
-            <svg class="icon icon--white icon--small">
-              <use xlink:href="../images/sprite.svg#growth"></use>
-            </svg>
-          </span>
-        </div>
-        <blockquote class="quote">
-          <p class="quote__text">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo
-            voluptas aliquid earum quasi magni harum! Minima animi recusandae
-            perferendis sint, accusamus officia porro adipisci asperiores nihil
-            ex quo voluptatum eaque corrupti praesentium delectus et modi est
-            iure eveniet provident sequi magnam corporis accusantium rerum.
-            Magnam ratione quod sit reiciendis similique!
-          </p>
-          <footer>
-            <div class="media">
-              <div class="media__image">
-                <svg class="icon icon--primary quote__line">
-                  <use xlink:href="../icons/sprite.svg#line"></use>
-                </svg>
-              </div>
-              <div class="media__body">
-                <h3 class="media__title quote__author">Eden Abwe</h3>
-                <p class="media__text quote-author__company">
-                  Eden Company CEO
-                </p>
-              </div>
-            </div>
-          </footer>
-        </blockquote>
-      </div>
-    </div>
-    <div class="callout callout--primary">
-      <div class="grid grid--1x2">
-        <div class="callout__content">
-          <h2 class="callout__heading">Ready to Get Started?</h2>
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum
-            sapiente repudiandae iste ullam minima cupiditate non laudantium
-            officia corporis, at eveniet dignissimos provident consequatur
-            tempora iusto delectus odit. Accusantium, explicabo?
-          </p>
-        </div>
-        <a href="#" class="btn btn--primary btn--stretched">Get Started</a>
-      </div>
-    </div>
-    <div class="collapsible collapsible--expanded">
-      <header class="collapsible__header">
-        <h2 class="collapsible__heading">Item 1</h2>
-        <svg class="icon icon--primary collapsible__chevron">
-          <use xlink:href="../icons/sprite.svg#chevron"></use>
-        </svg>
-      </header>
-    </div>
-    <div class="collapsible__content">
-      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic similique
-      cupiditate est velit laboriosam amet accusantium incidunt rem natus
-      dignissimos.
-    </div>
-    <section class="block container">
-      <header class="block__header">
-        <h2 class="block__heading">Heading 2</h2>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus,
-          excepturi.
-        </p>
-      </header>
-      <div class="card-container">
-        <div class="card card--primary">
-          <header class="card__header">Card Title</header>
-          <div class="card__body">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. At minima
-            impedit sequi animi dolorum blanditiis possimus alias eveniet
-            pariatur explicabo ullam molestias qui corrupti aperiam, nostrum
-            cupiditate veniam deserunt! Dolorum?
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="block block--dark block--skewed-left">
-      <div>
-        <h2 class="block__heading">Heading 2</h2>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus,
-          excepturi.
-        </p>
-      </div>
-    </section>
+  <body>
     <nav class="nav collapsible collapsible--expanded">
       <a class="nav__brand" href="/"><img src="./images/logo.svg" alt="" /></a>
       <svg class="icon icon--white nav__toggler">
@@ -254,123 +51,127 @@
         </div>
       </div>
     </section>
-    <section class="block block-domain">
-      <header class="block__header">
-        <h2>Starting at $9 per month</h2>
-        <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere,
-          earum!
-        </p>
-      </header>
-      <div class="input-group">
-        <input
-          type="text"
-          class="input"
-          placeholder="Enter domain name here ..."
-        />
-        <button class="btn btn--accent">
-          <svg class="icon icon--white">
-            <use xlink:href="../images/sprite.svg#search"></use>
-          </svg>
-          Search
-        </button>
-      </div>
-      <ul class="list block-domain__prices">
-        <li>.com $9</li>
-        <li><span class="badge badge--primary">.sg $10</span></li>
-        <li>.space $11</li>
-        <li>.info $14</li>
-        <li>.net $10</li>
-        <li>.xyz $10</li>
-      </ul>
-    </section>
-    <!--plans-->
-    <section class="block block-plans">
-      <div class="grid grid--1x3">
-        <div class="plan">
-          <div class="card card--primary">
-            <header class="card__header">
-              <h3 class="plan__name">Entry</h3>
-              <div class="plan__heading">
-                <span class="plan__price">$14</span>
-                <span class="plan__billing-cycle">/month</span>
-                <span class="badge badge--primary badge--small">10% OFF</span>
+    <div class="container">
+      <section class="block block-domain">
+        <header class="block__header">
+          <h2>Starting at $9 per month</h2>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere,
+            earum!
+          </p>
+        </header>
+        <div class="input-group">
+          <input
+            type="text"
+            class="input"
+            placeholder="Enter domain name here ..."
+          />
+          <button class="btn btn--accent">
+            <svg class="icon icon--white">
+              <use xlink:href="../images/sprite.svg#search"></use>
+            </svg>
+            Search
+          </button>
+        </div>
+        <ul class="list block-domain__prices">
+          <li>.com $9</li>
+          <li><span class="badge badge--primary">.sg $10</span></li>
+          <li>.space $11</li>
+          <li>.info $14</li>
+          <li>.net $10</li>
+          <li>.xyz $10</li>
+        </ul>
+      </section>
+      <!--plans-->
+      <section class="block block-plans">
+        <div class="grid grid--1x3">
+          <div class="plan">
+            <div class="card card--primary">
+              <header class="card__header">
+                <h3 class="plan__name">Entry</h3>
+                <div class="plan__heading">
+                  <span class="plan__price">$14</span>
+                  <span class="plan__billing-cycle">/month</span>
+                  <span class="badge badge--primary badge--small">10% OFF</span>
+                </div>
+                <span class="plan__description">Easy start on the Cloud </span>
+              </header>
+              <div class="card__body">
+                <ul class="list list--tick">
+                  <li class="list__item">Unlimited Website</li>
+                  <li class="list__item">Unlimited Bandwidth</li>
+                  <li class="list__item">100GB SSD Storage</li>
+                  <li class="list__item">3GB RAM</li>
+                </ul>
+                <button class="btn btn--primary btn__block btn__outline">
+                  Buy Now
+                </button>
               </div>
-              <span class="plan__description">Easy start on the Cloud </span>
-            </header>
-            <div class="card__body">
-              <ul class="list list--tick">
-                <li class="list__item">Unlimited Website</li>
-                <li class="list__item">Unlimited Bandwidth</li>
-                <li class="list__item">100GB SSD Storage</li>
-                <li class="list__item">3GB RAM</li>
-              </ul>
-              <button class="btn btn--primary btn__block btn__outline">
-                Buy Now
-              </button>
+            </div>
+          </div>
+          <div class="plan plan--popular">
+            <div class="card card--secondary">
+              <header class="card__header">
+                <h3 class="plan__name">Business</h3>
+                <div class="plan__heading">
+                  <span class="plan__price">$24</span>
+                  <span class="plan__billing-cycle">/month</span>
+                  <span class="badge badge--secondary badge--small"
+                    >10% OFF</span
+                  >
+                </div>
+                <span class="plan__description">Easy start on the Cloud</span>
+              </header>
+              <div class="card__body">
+                <ul class="list list--tick">
+                  <li class="list__item">Unlimited Website</li>
+                  <li class="list__item">Unlimited Bandwidth</li>
+                  <li class="list__item">100GB SSD Storage</li>
+                  <li class="list__item">3GB RAM</li>
+                  <li class="list__item">2 CPU Cores</li>
+                </ul>
+                <button class="btn btn--primary btn__block btn__outline">
+                  Buy Now
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="plan">
+            <div class="card card--primary">
+              <header class="card__header">
+                <h3 class="plan__name">Business Plus</h3>
+                <div class="plan__heading">
+                  <span class="plan__price">$54</span>
+                  <span class="plan__billing-cycle">/month</span>
+                  <span class="badge badge--primary badge--small">10% OFF</span>
+                </div>
+                <span class="plan__description">Easy start on the Cloud</span>
+              </header>
+              <div class="card__body">
+                <ul class="list list--tick">
+                  <li class="list__item">Unlimited Website</li>
+                  <li class="list__item">Unlimited Bandwidth</li>
+                  <li class="list__item">100GB SSD Storage</li>
+                  <li class="list__item">3GB RAM</li>
+                  <li class="list__item">2 CPU</li>
+                </ul>
+                <button class="btn btn--primary btn__block btn__outline">
+                  Buy Now
+                </button>
+              </div>
             </div>
           </div>
         </div>
-        <div class="plan plan--popular">
-          <div class="card card--secondary">
-            <header class="card__header">
-              <h3 class="plan__name">Business</h3>
-              <div class="plan__heading">
-                <span class="plan__price">$24</span>
-                <span class="plan__billing-cycle">/month</span>
-                <span class="badge badge--secondary badge--small">10% OFF</span>
-              </div>
-              <span class="plan__description">Easy start on the Cloud</span>
-            </header>
-            <div class="card__body">
-              <ul class="list list--tick">
-                <li class="list__item">Unlimited Website</li>
-                <li class="list__item">Unlimited Bandwidth</li>
-                <li class="list__item">100GB SSD Storage</li>
-                <li class="list__item">3GB RAM</li>
-                <li class="list__item">2 CPU Cores</li>
-              </ul>
-              <button class="btn btn--primary btn__block btn__outline">
-                Buy Now
-              </button>
-            </div>
-          </div>
-        </div>
-        <div class="plan">
-          <div class="card card--primary">
-            <header class="card__header">
-              <h3 class="plan__name">Business Plus</h3>
-              <div class="plan__heading">
-                <span class="plan__price">$54</span>
-                <span class="plan__billing-cycle">/month</span>
-                <span class="badge badge--primary badge--small">10% OFF</span>
-              </div>
-              <span class="plan__description">Easy start on the Cloud</span>
-            </header>
-            <div class="card__body">
-              <ul class="list list--tick">
-                <li class="list__item">Unlimited Website</li>
-                <li class="list__item">Unlimited Bandwidth</li>
-                <li class="list__item">100GB SSD Storage</li>
-                <li class="list__item">3GB RAM</li>
-                <li class="list__item">2 CPU</li>
-              </ul>
-              <button class="btn btn--primary btn__block btn__outline">
-                Buy Now
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="block">
-      <header class="block__header">
-        <h2>Hosting on the Cloud to keep Growing</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque ,
-          minima impedit sed explicabo molestias nisi temporibus?
-        </p>
-      </header>
+      </section>
+      <section class="block">
+        <header class="block__header">
+          <h2>Hosting on the Cloud to keep Growing</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque ,
+            minima impedit sed explicabo molestias nisi temporibus?
+          </p>
+        </header>
+      </section>
       <article class="grid grid--1x2 feature">
         <div class="feature__content">
           <span class="icon-container">
@@ -499,7 +300,7 @@
           />
         </picture>
       </article>
-    </section>
+    </div>
     <section class="block block--dark block--skewed-right">
       <header class="block__header">
         <h2 class="showcase__heading">User-Friendly Control Panel</h2>
@@ -520,52 +321,108 @@
             class="showcase__image"
           />
         </picture>
-        <div>
-          <div class="media">
-            <div class="media__image">
-              <svg class="icon icon--secondary">
+        <ul class="list">
+          <li>
+            <div class="media">
+              <div class="media__image">
+                <svg class="icon icon--secondary">
+                  <use xlink:href="../images/sprite.svg#growth"></use>
+                </svg>
+              </div>
+              <div class="media__body">
+                <h3 class="media__title">Easy Start & Managed Update</h3>
+                <p>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Totam beatae dolorem nulla labore sed itaque voluptatem.
+                  Magni, repellat.
+                </p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="media">
+              <div class="media__image">
+                <svg class="icon icon--secondary">
+                  <use xlink:href="../images/sprite.svg#growth"></use>
+                </svg>
+              </div>
+              <div class="media__body">
+                <h3 class="media__title">Staging, Git & WP-CLI</h3>
+                <p>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Totam beatae dolorem nulla labore sed itaque voluptatem.
+                  Magni, repellat.
+                </p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="media">
+              <div class="media__image">
+                <svg class="icon icon--secondary">
+                  <use xlink:href="../images/sprite.svg#wordpress"></use>
+                </svg>
+              </div>
+              <div class="media__body">
+                <h3 class="media__title">Dynamic Caching & More</h3>
+                <p>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Totam beatae dolorem nulla labore sed itaque voluptatem.
+                  Magni, repellat.
+                </p>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="block container">
+      <header class="block__header">
+        <h2>What our Customer are Saying</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae aliquid
+          adipisci tempora nihil, numquam esse dolores quam totam deserunt qui.
+        </p>
+      </header>
+      <div class="card testimonial--container">
+        <div class="grid grid--1x2">
+          <div class="testimonial__image-container">
+            <img
+              class="testimonial__image"
+              src="./images/testimonial.jpg"
+              alt="a customer with a smilling face"
+            />
+            <span class="icon-container icon-container--accent">
+              <svg class="icon icon--white icon--small">
                 <use xlink:href="../images/sprite.svg#growth"></use>
               </svg>
-            </div>
-            <div class="media__body">
-              <h3 class="media__title">Easy Start & Managed Update</h3>
-              <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam
-                beatae dolorem nulla labore sed itaque voluptatem. Magni,
-                repellat.
-              </p>
-            </div>
+            </span>
           </div>
-          <div class="media">
-            <div class="media__image">
-              <svg class="icon icon--secondary">
-                <use xlink:href="../images/sprite.svg#growth"></use>
-              </svg>
-            </div>
-            <div class="media__body">
-              <h3 class="media__title">Staging, Git & WP-CLI</h3>
-              <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam
-                beatae dolorem nulla labore sed itaque voluptatem. Magni,
-                repellat.
-              </p>
-            </div>
-          </div>
-          <div class="media">
-            <div class="media__image">
-              <svg class="icon icon--secondary">
-                <use xlink:href="../images/sprite.svg#wordpress"></use>
-              </svg>
-            </div>
-            <div class="media__body">
-              <h3 class="media__title">Dynamic Caching & More</h3>
-              <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam
-                beatae dolorem nulla labore sed itaque voluptatem. Magni,
-                repellat.
-              </p>
-            </div>
-          </div>
+          <blockquote class="quote">
+            <p class="quote__text">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo
+              voluptas aliquid earum quasi magni harum! Minima animi recusandae
+              perferendis sint, accusamus officia porro adipisci asperiores
+              nihil ex quo voluptatum eaque corrupti praesentium delectus et
+              modi est iure eveniet provident sequi magnam corporis accusantium
+              rerum. Magnam ratione quod sit reiciendis similique!
+            </p>
+            <footer>
+              <div class="media">
+                <div class="media__image">
+                  <svg class="icon icon--primary quote__line">
+                    <use xlink:href="../images/sprite.svg#line"></use>
+                  </svg>
+                </div>
+                <div class="media__body">
+                  <h3 class="media__title quote__author">Eden Abwe</h3>
+                  <p class="media__text quote-author__company">
+                    Eden Company CEO
+                  </p>
+                </div>
+              </div>
+            </footer>
+          </blockquote>
         </div>
       </div>
     </section>

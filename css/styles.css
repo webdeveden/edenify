@@ -140,7 +140,6 @@ a {
 /*Lists */
 
 .list {
-  color: var(--color-headings);
   padding-left: 0;
   list-style: none;
 }
@@ -154,6 +153,7 @@ a {
   list-style-image: url(../images/tick.svg);
   /*making the tick visible*/
   padding-left: 3rem;
+  color: var(--color-headings);
 }
 /* separating list element to the green tick */
 .list--tick .list__item {
@@ -434,6 +434,7 @@ a {
 .media__title {
   margin-top: 0;
   color: #fff;
+  font-weight: 400;
 }
 
 .media__image {
@@ -458,14 +459,18 @@ a {
 .quote__author {
   margin-top: 5px;
   font-style: normal;
+  font-weight: 600;
   font-size: 3rem;
   margin-bottom: 0;
+  white-space: nowrap;
+  color: var(--color-headings);
 }
 
 .quote-author__company {
   font-size: 2rem;
   color: #cfcdd9;
   font-style: normal;
+  white-space: nowrap;
 }
 
 @media screen and (min-width: 1024px) {
@@ -644,7 +649,6 @@ a {
 /* Navigation bar */
 
 .nav {
-  margin-top: 10rem;
   display: flex;
   padding: 0 1rem;
   background: black;
