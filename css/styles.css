@@ -581,6 +581,7 @@ a {
 
 .collapsible__heading {
   margin-top: 0;
+  color: #fff;
   font-size: 3rem;
 }
 
@@ -775,6 +776,10 @@ a {
   gap: 8rem 4rem;
 }
 
+.block-plans .card {
+  max-width: 500px;
+}
+
 /*Features Block */
 
 .feature {
@@ -818,4 +823,75 @@ a {
 
 .showcase__image {
   width: 100%;
+}
+
+/*Footer */
+
+.footer {
+  background: #232323;
+}
+
+.footer__section {
+  padding: 2rem;
+  border-bottom: 1px solid #393939;
+}
+
+.footer__section .list {
+  margin-top: 0;
+  line-height: 6rem;
+}
+
+.footer__heading {
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.footer__brand {
+  text-align: center;
+  margin-top: 5rem;
+}
+.footer__brand img {
+  width: 100%;
+}
+.footer__copyrigth {
+  font-size: 2.1rem;
+  color: #5b5b5b;
+}
+
+.footer a {
+  color: #6f6f6f;
+  transition: color 0.3s;
+}
+
+.footer a:hover {
+  color: #fff;
+}
+
+@media screen and (min-width: 768px) {
+  .footer__grid {
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+  }
+  .footer .collapsible__chevron {
+    display: none;
+  }
+  .footer .collapsible__content {
+    max-height: 100%;
+    opacity: 1;
+  }
+
+  .footer__section {
+    border: 0;
+  }
+  .footer__section .list {
+    line-height: 4rem;
+  }
+  .footer__heading {
+    font-size: 1.6rem;
+  }
+  .footer__brand {
+    order: -1;
+  }
+  .footer__copyrigth {
+    font-size: 1.5rem;
+  }
 }
