@@ -1,9 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!--Search engine optimization meta data gives search information about our pages-->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Moshify website</title>
+    <!--this will be seen by people when searching for our website on a search engine-->
+    <meta
+      name="description"
+      content="Deploy your website in less than 60 seconds."
+    />
+    <!--this meta data is used to customized what people will see when someone share
+    our website (title, description, image) go to  ogp.me for more info.-->
+    <meta property="0g:title" content="Moshify..." />
+    <meta property="0g:description" content="Moshify website is for..." />
+    <meta property="0g:type" content="website" />
+    <meta property="0g:image" content="https://...." />
+    <meta property="0g:url" content="https://our.website.url" />
+    <title>Moshify - Go online for Just $9</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -12,24 +25,29 @@
     />
     <link rel="stylesheet" href="./css/normalize.css" />
     <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
   <body>
-    <nav class="nav collapsible collapsible--expanded">
-      <a class="nav__brand" href="/"><img src="./images/logo.svg" alt="" /></a>
-      <svg class="icon icon--white nav__toggler">
-        <use xlink:href="../images/sprite.svg#menu"></use>
-      </svg>
-      <ul class="list nav__list collapsible__content">
-        <li class="nav__item"><a href="#">Hosting</a></li>
-        <li class="nav__item"><a href="#">VPS</a></li>
-        <li class="nav__item"><a href="#">Domain</a></li>
-        <li class="nav__item"><a href="#">Pricing</a></li>
-      </ul>
-    </nav>
+    <header>
+      <nav class="nav collapsible collapsible--expanded">
+        <a class="nav__brand" href="/"
+          ><img src="./images/logo.svg" alt=""
+        /></a>
+        <svg class="icon icon--white nav__toggler">
+          <use xlink:href="../images/sprite.svg#menu"></use>
+        </svg>
+        <ul class="list nav__list collapsible__content">
+          <li class="nav__item"><a href="#">Hosting</a></li>
+          <li class="nav__item"><a href="#">VPS</a></li>
+          <li class="nav__item"><a href="#">Domain</a></li>
+          <li class="nav__item"><a href="#">Pricing</a></li>
+        </ul>
+      </nav>
+    </header>
     <section class="block block--dark block--skewed-left hero">
       <div class="container-hero">
         <div class="grid grid--1x2">
-          <header class="block__header hero__content">
+          <header class="block__header hero__content" data-aos="fade-right">
             <h1 class="block__heading">Cloud Hosting for Pros</h1>
             <p class="hero__tagline">
               Deploy your websites in less than 60 seconds.
@@ -37,7 +55,7 @@
             <a href="#" class="btn btn--accent btn--stretched">Get started</a>
           </header>
           <!--Optimizing the image using photoshop and cloudconvert.com depending on the size needed for it-->
-          <picture>
+          <picture data-aos="fade-up">
             <source
               type="image/webp"
               srcset="images/banner.webp 1x, images/banner@2x.webp 2x"
@@ -60,6 +78,7 @@
             earum!
           </p>
         </header>
+        <!--inputs forms-->
         <div class="input-group">
           <input
             type="text"
@@ -173,7 +192,7 @@
         </header>
       </section>
       <article class="grid grid--1x2 feature">
-        <div class="feature__content">
+        <div class="feature__content" data-aos="fade-right">
           <span class="icon-container">
             <svg class="icon icon--secondary">
               <use xlink:href="../images/sprite.svg#easy"></use>
@@ -188,7 +207,7 @@
           </p>
           <a href="#" class="link-arrow">Learn more</a>
         </div>
-        <picture>
+        <picture data-aos="fade-up">
           <source
             type="image/webp"
             srcset="images/easy@1x.webp 1x, images/easy@2x.webp 2x"
@@ -205,7 +224,7 @@
         </picture>
       </article>
       <article class="grid grid--1x2 feature">
-        <div class="feature__content">
+        <div class="feature__content" data-aos="fade-left">
           <span class="icon-container">
             <svg class="icon icon--secondary">
               <use xlink:href="../images/sprite.svg#computer"></use>
@@ -220,7 +239,7 @@
           </p>
           <a href="#" class="link-arrow">Learn more</a>
         </div>
-        <picture>
+        <picture data-aos="fade-up">
           <source
             type="image/webp"
             srcset="images/fast@1x.webp 1x, images/fast@2x.webp 2x"
@@ -237,7 +256,7 @@
         </picture>
       </article>
       <article class="grid grid--1x2 feature">
-        <div class="feature__content">
+        <div class="feature__content" data-aos="fade-right">
           <span class="icon-container">
             <svg class="icon icon--secondary">
               <use xlink:href="../images/sprite.svg#settings"></use>
@@ -252,7 +271,7 @@
           </p>
           <a href="#" class="link-arrow">Learn more</a>
         </div>
-        <picture>
+        <picture data-aos="fade-up">
           <source
             type="image/webp"
             srcset="images/wordpress@1x.webp 1x, images/wordpress@2x.webp 2x"
@@ -269,7 +288,7 @@
         </picture>
       </article>
       <article class="grid grid--1x2 feature">
-        <div class="feature__content">
+        <div class="feature__content" data-aos="fade-left">
           <span class="icon-container">
             <svg class="icon icon--secondary">
               <use xlink:href="../images/sprite.svg#clock"></use>
@@ -284,7 +303,7 @@
           </p>
           <a href="#" class="link-arrow">Learn more</a>
         </div>
-        <picture>
+        <picture data-aos="fade-up">
           <source
             type="image/webp"
             srcset="images/support@1x.webp 1x, images/support@2x.webp 2x"
@@ -306,7 +325,7 @@
         <h2 class="showcase__heading">User-Friendly Control Panel</h2>
       </header>
       <div class="grid grid--1x2 showcase--block">
-        <picture>
+        <picture data-aos="zoom-in-right">
           <source
             type="image/webp"
             srcset="images/ipad@1x.webp 1x, images/ipad@2x.webp 2x"
@@ -321,7 +340,7 @@
             class="showcase__image"
           />
         </picture>
-        <ul class="list">
+        <ul class="list" data-aos="fade-up">
           <li>
             <div class="media">
               <div class="media__image">
@@ -388,6 +407,7 @@
         <div class="grid grid--1x2">
           <div class="testimonial__image-container">
             <img
+              data-aos="zoom-in-up"
               class="testimonial__image"
               src="./images/testimonial.jpg"
               alt="a customer with a smilling face"
@@ -426,6 +446,21 @@
         </div>
       </div>
     </section>
+    <div class="container">
+      <div class="callout callout--primary callout-signup">
+        <div class="grid grid--1x2">
+          <div class="callout__content">
+            <h2 class="callout__heading">Ready to Get Started?</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi
+              voluptate tempora qui distinctio consequatur aliquid pariatur
+              cupiditate quas cum fugit.
+            </p>
+          </div>
+          <a href="#" class="btn btn--primary btn--stretched">Get Started</a>
+        </div>
+      </div>
+    </div>
     <footer class="block block--dark footer">
       <div class="grid footer__grid">
         <section class="collapsible collapsible--expanded footer__section">
@@ -491,7 +526,6 @@
             <li><a href="#">Cheap SSL Certificate</a></li>
           </ul>
         </section>
-
         <section class="footer__brand">
           <img src="images/logo.svg" alt="" />
           <p class="footer__copyrigth">Copyright 2024 Eden Abwe</p>
@@ -499,5 +533,9 @@
       </div>
     </footer>
     <script src="./js/main.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
