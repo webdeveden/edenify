@@ -89,7 +89,7 @@ a {
   content: "-->";
   margin-left: 5px;
   margin-bottom: 5rem;
-  transition: margin(0.15s);
+  transition: margin-left 0.15s;
 }
 /*targetting an element inside the other element in hover state*/
 .link-arrow:hover::after {
@@ -781,7 +781,7 @@ a {
 
 .block-plans .card {
   max-width: 500px;
-  margin: o auto;
+  margin: 0 auto;
 }
 
 /*Features Block */
