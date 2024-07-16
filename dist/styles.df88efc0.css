@@ -1,0 +1,898 @@
+:root {
+  --color-primary: #00d9ff;
+  --color-secondary: #2584ff;
+  --color-accent: #ff3400;
+  --color-headings: #1b0760;
+  --color-body: #918ca4;
+  --color-body-darker: #6b6583;
+  --border-color: #ccc;
+  --border-radius: 30px;
+}
+/*making all element to have box-sizing 0f border box in the entire document*/
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+::selection {
+  background: var(--color-secondary);
+  color: #fff;
+}
+
+/* Typography */
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Inter", Arial, Helvetica, sans-serif;
+  color: var(--color-body);
+  line-height: 1.5; /*1.5 of the font-size*/
+  font-size: 2.4rem;
+}
+
+h1,
+h2,
+h3 {
+  color: var(--color-headings);
+  margin-bottom: 1rem;
+  line-height: 1.1;
+}
+
+h1 {
+  font-size: 7rem;
+}
+
+h2 {
+  font-size: 4rem;
+}
+
+h3 {
+  font-size: 3rem;
+}
+p {
+  margin-top: 0;
+}
+
+@media screen and (min-width: 1024px) {
+  body {
+    font-size: 1.8rem;
+  }
+
+  h1 {
+    font-size: 8rem;
+  }
+  h2 {
+    font-size: 4rem;
+  }
+  h3 {
+    font-size: 2.4rem;
+  }
+}
+/*Links */
+
+a {
+  text-decoration: none;
+}
+
+.link-arrow {
+  font-size: 2rem;
+  text-transform: uppercase;
+  color: var(--color-accent);
+  font-weight: bold;
+}
+
+.link-arrow::after {
+  content: "-->";
+  margin-left: 5px;
+  margin-bottom: 5rem;
+  transition: margin-left 0.15s;
+}
+/*targetting an element inside the other element in hover state*/
+.link-arrow:hover::after {
+  margin-left: 10px;
+}
+
+@media screen and (min-width: 1024px) {
+  .link-arrow {
+    font-size: 1.5rem;
+  }
+}
+
+/*Badges */
+
+.badge {
+  border-radius: 20px;
+  padding: 0.5rem 2rem;
+  font-weight: 600;
+  /*no matter what the content in our badge shoul be only one line */
+  white-space: nowrap;
+  color: #fff;
+  font-size: 2rem;
+}
+
+.badge--primary {
+  background: var(--color-primary);
+}
+
+.badge--secondary {
+  background: var(--color-secondary);
+}
+
+.badge--small {
+  font-size: 1.6rem;
+  padding: 0.5rem 1.5rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .badge {
+    font-size: 1.5rem;
+  }
+
+  .badge--small {
+    font-size: 1.2rem;
+  }
+}
+
+/*Lists */
+
+.list {
+  padding-left: 0;
+  list-style: none;
+}
+
+.list--inline .list__item {
+  display: inline-block;
+  margin-right: 2rem;
+}
+
+.list--tick {
+  list-style-image: url(/tick.626c29a3.svg);
+  /*making the tick visible*/
+  padding-left: 3rem;
+  color: var(--color-headings);
+}
+/* separating list element to the green tick */
+.list--tick .list__item {
+  padding-left: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .list--tick .list__item {
+    padding-left: 0;
+  }
+}
+
+/*Icons */
+
+.icon {
+  width: 40px;
+  height: 40px;
+}
+.icon--small {
+  width: 30px;
+  height: 30px;
+}
+
+.icon--primary {
+  fill: var(--color-primary);
+}
+.icon--secondary {
+  fill: var(--color-secondary);
+}
+.icon--white {
+  fill: #fff;
+}
+
+.icon-container {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background: #f3f9fa;
+  width: 64px;
+  height: 64px;
+  border-radius: 100%;
+}
+
+.icon-container--accent {
+  background: var(--color-accent);
+}
+
+/*Button*/
+
+.btn {
+  padding: 2rem 4vw;
+  color: #fff;
+  font-size: 1.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  border-radius: 30px;
+  border: 0;
+  cursor: pointer;
+  white-space: nowrap;
+  margin: 1rem 0;
+  text-align: center;
+}
+
+.btn .icon {
+  width: 2rem;
+  height: 2rem;
+  margin-right: 1rem;
+  vertical-align: middle;
+}
+
+.btn--primary {
+  background: var(--color-primary);
+}
+.btn--primary:hover {
+  background: #fd4516;
+}
+
+.btn--secondary {
+  background: var(--color-secondary);
+}
+.btn--secondary:hover {
+  background: #00c8eb;
+}
+
+.btn--accent {
+  background: var(--color-accent);
+}
+
+.btn--accent:hover {
+  background: rgb(156, 13, 13);
+}
+
+.btn--stretched {
+  padding-left: 6rem;
+  padding-right: 6rem;
+}
+
+.btn__block {
+  width: 100%;
+  /*ancho element are inline by default , inline-block will make the 100% width to work*/
+  display: inline-block;
+}
+
+.btn__outline {
+  background: #fff;
+  border: 2px solid var(--color-headings);
+  color: var(--color-headings);
+}
+
+.btn__outline:hover {
+  background: var(--color-headings);
+  color: #fff;
+}
+
+@media screen and (min-width: 1024px) {
+  .btn {
+    font-size: 1.5rem;
+  }
+}
+
+/*Inputs */
+
+.input {
+  padding: 1.5rem 3.5rem;
+  border: 1px solid #ccc;
+  border-radius: var(--border-radius);
+  outline: 0;
+  color: var(--color-headings);
+  font-size: 2rem;
+}
+
+/*changing placeholder properties*/
+::placeholder {
+  color: #bbb9c9;
+}
+/*defining input-group after wrapping our input into a div*/
+.input-group {
+  border-radius: var(--border-radius);
+  border: 1px solid var(--border-color);
+  display: flex;
+}
+
+.input-group .input {
+  border: 0;
+  flex-grow: 1;
+  padding: 1.5rem 2rem;
+  width: 0;
+}
+/*adjustin our marrgin between the div boder and our button*/
+.input-group .btn {
+  margin: 4px;
+}
+
+@media screen and (min-width: 1024px) {
+  .input {
+    font-size: 1.5rem;
+  }
+}
+
+/* Card */
+
+.card {
+  border-radius: 7px;
+  box-shadow: 0 0 20px 10px #f6f8f9;
+  overflow: hidden;
+}
+
+.card__header,
+.card__body {
+  padding: 2rem 3rem;
+}
+
+.card--primary .card__header {
+  background: var(--color-primary);
+  color: #fff;
+}
+.card--secondary .card__header {
+  background: var(--color-secondary);
+  color: #fff;
+}
+
+.card--primary .badge--primary {
+  background: #02cdf1;
+}
+.card--secondary .badge--secondary {
+  background: #126de4;
+}
+
+/*Plans*/
+
+.plan__name {
+  font-weight: 500;
+  margin: 0;
+  color: #fff;
+  font-size: 2.4rem;
+}
+
+.plan__price {
+  font-size: 6rem;
+}
+
+.plan__billing-cycle {
+  font-size: 2.4rem;
+  font-weight: 300;
+  opacity: 0.8; /*80% opacity*/
+  margin-right: 1rem;
+}
+
+.plan__description {
+  font-size: 2rem;
+  font-weight: 300;
+  letter-spacing: 1px;
+  white-space: nowrap;
+  display: block;
+}
+
+.plan .list__item {
+  margin-bottom: 2rem;
+}
+.plan .plan__heading {
+  white-space: nowrap;
+}
+.plan {
+  transition: transform 0.2s ease-out;
+}
+.plan:hover {
+  transform: scale(1.05);
+}
+.plan--popular:hover {
+  transform: scale(1.15);
+}
+/*implimenting the popular image in our card , create a plan--popular class on plan level */
+.plan--popular .card__header {
+  position: relative;
+}
+
+.plan--popular .card--secondary .card__header::before {
+  content: url(/popular.a6fe98f3.svg);
+  position: absolute;
+  width: 30px;
+  right: 5%;
+  display: inline-block;
+  top: -5px;
+}
+
+@media screen and (min-width: 1024px) {
+  .plan--popular {
+    transform: scale(1.1);
+  }
+  .plan__name {
+    font-size: 1.4rem;
+  }
+  .plan__price {
+    font-size: 5rem;
+  }
+  .plan__billing-cycle {
+    font-size: 1.6rem;
+  }
+}
+
+/*Media */
+
+.media {
+  display: flex;
+}
+
+.media__body {
+  margin: 0 2rem;
+}
+
+.media__title {
+  margin-top: 0;
+  color: #fff;
+  font-weight: 400;
+}
+
+.media__image {
+  margin-top: 0.5rem;
+}
+
+/*Quotes */
+
+.quote {
+  font-size: 3rem;
+  font-style: italic;
+  color: var(--color-body-darker);
+  line-height: 1.3;
+}
+
+.quote__text::before {
+  content: open-quote;
+}
+.quote__text::after {
+  content: close-quote;
+}
+.quote__author {
+  margin-top: 5px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 3rem;
+  margin-bottom: 0;
+  color: var(--color-headings);
+}
+
+.quote-author__company {
+  font-size: 2rem;
+  color: #cfcdd9;
+  font-style: normal;
+}
+
+@media screen and (min-width: 1024px) {
+  .quote {
+    font-size: 2.4rem;
+  }
+  .quote__author {
+    font-size: 2.4rem;
+  }
+  .quote-author__company {
+    font-size: 1.6rem;
+  }
+}
+
+/*Grids*/
+
+.grid {
+  display: grid;
+}
+
+@media screen and (min-width: 768px) {
+  .grid--1x2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .grid--1x3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/*Testimonial */
+
+.testimonial--container {
+  padding: 3rem;
+}
+
+.testimonial__image-container {
+  position: relative;
+}
+.testimonial__image {
+  width: 100%;
+}
+
+.testimonial__image-container > .icon-container--accent {
+  position: absolute;
+  top: 3rem;
+  right: -32px;
+}
+
+@media screen and (min-width: 768px) {
+  .testimonial--container .quote,
+  .testimonial--container .quote__author {
+    font-size: 2.4rem;
+  }
+
+  .testimonial--container .quote {
+    margin-left: 6rem;
+  }
+}
+
+/* Callouts */
+
+.callout {
+  padding: 4rem;
+  border-radius: 5px;
+}
+
+.callout--primary {
+  background: var(--color-secondary);
+  color: #fff;
+}
+
+.callout-signup {
+  transform: translateY(5rem);
+}
+
+.callout__heading {
+  margin-top: 0;
+  color: #fff;
+  font-size: 3rem;
+}
+
+.callout .btn {
+  justify-self: center;
+  align-self: center;
+}
+
+.callout__content {
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .callout__content {
+    text-align: start;
+  }
+
+  .callout .btn {
+    justify-self: start;
+    margin: 0 2rem;
+  }
+  .callout .grid--1x2 {
+    grid-template-columns: 1fr auto;
+  }
+}
+
+/* Collapsible */
+
+.collapsible__header {
+  display: flex;
+  margin-top: 5rem;
+  justify-content: space-between;
+}
+
+.collapsible__heading {
+  margin-top: 0;
+  color: #fff;
+  font-size: 3rem;
+}
+
+.collapsible__chevron {
+  transform: rotate(90deg);
+  transition: transform 0.3s;
+}
+.collapsible__content {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  /*animating properties using "all " */
+  transition: all 0.3s;
+}
+
+.collapsible--expanded .collapsible__chevron {
+  transform: rotate(0);
+}
+
+.collapsible--expanded .collapsible__content {
+  max-height: 100vh;
+  opacity: 1;
+}
+
+/* Block */
+
+.block {
+  /*u can also define a variable in a partiocular rule so you can perform some calculation when needed using calc() 
+  fucntion */
+  --padding-vertical: 6rem;
+  padding: var(--padding-vertical) 2rem;
+}
+.block__header {
+  text-align: center;
+}
+.block__heading {
+  margin-top: 0;
+}
+
+.block--dark {
+  background: black;
+  color: #7b858b;
+}
+
+.block--dark .block__heading {
+  color: #fff;
+}
+
+.block--skewed-right {
+  /* top left ,top rigth, button left ,buttom right */
+  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 90%);
+  padding-bottom: calc(var(--padding-vertical) + 4rem);
+}
+.block--skewed-left {
+  /* top left ,top rigth, button left ,buttom right */
+  clip-path: polygon(0% 100%, 100% 74%, 100% 0%, 0% 0%);
+  padding-bottom: calc(var(--padding-vertical) + 4rem);
+}
+
+/* using this class and property no matter how big our screen will be it will only cover 1140px on the screen */
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+/* Navigation bar */
+
+.nav {
+  display: flex;
+  padding: 0 1rem;
+  background: black;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.nav__list {
+  width: 100%;
+  margin: 0;
+}
+
+.nav__item {
+  padding: 0.5rem 2rem;
+  border-bottom: 1px solid #232323;
+}
+
+.nav__item > a {
+  color: #d3d0db;
+  transition: color 0.3s;
+}
+.nav__item > a:hover {
+  color: #fff;
+}
+
+.nav__toggler {
+  opacity: 0.5;
+  cursor: pointer;
+  transition: box-shadow 0.15s;
+}
+/*making this very specific to only nav element (no space between .nav and .collapsible--expanded*/
+.nav.collapsible--expanded .nav__toggler {
+  opacity: 1;
+  box-shadow: 0 0 0 3px lightgray;
+  border-radius: 6px;
+}
+.nav__brand {
+  transform: translateY(5px);
+}
+
+@media screen and (min-width: 768px) {
+  .nav__toggler {
+    display: none;
+  }
+
+  .nav__list {
+    width: auto;
+    display: flex;
+    font-size: 1.5rem;
+    /*making our list visble */
+    max-height: 100%;
+    opacity: 1;
+  }
+
+  .nav__item {
+    border: 0;
+  }
+}
+
+/*Hero */
+.hero {
+  /* top left ,top rigth, button left ,buttom right */
+  clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 0% 100%);
+  padding-bottom: calc(var(--padding-vertical) + 5rem);
+}
+
+.hero__tagline {
+  font-size: 2rem;
+  color: #7b858b;
+  letter-spacing: 1.7px;
+  margin-top: 2rem;
+  margin-bottom: 5rem;
+}
+.hero__image {
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .hero {
+    padding-top: 0;
+  }
+
+  .hero__content {
+    text-align: left;
+    align-self: center;
+  }
+}
+
+/* Domain blocks */
+
+.block-domain .input-group {
+  border: 0;
+  box-shadow: 0 0 30px 20px #ebeff1;
+  margin: 4rem auto;
+  max-width: 670px;
+}
+
+.block-domain__prices {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(
+    3,
+    6rem /*setting up the height of each row to six rem */
+  );
+  color: var(--color-headings);
+  font-size: 2rem;
+  font-weight: 600;
+  justify-items: center;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 768px) {
+  .block-domain__prices {
+    /*adjusting the template layout automatically for any needed changes in the future */
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+  }
+}
+
+/*Plans Block */
+
+.block-plans .grid {
+  /* the 8rem help the the card to dont overlap in mobile view */
+  gap: 8rem 4rem;
+}
+
+.block-plans .card {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+/*Features Block */
+
+.feature {
+  margin: 6rem 4rem;
+}
+
+.feature__heading {
+  margin-top: 1rem;
+}
+
+.feature__image {
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  /* this rule target feature__content apearing on the even row and change the order of the grid where the second
+  element become the first*/
+  .feature:nth-of-type(even) .feature__content {
+    order: 2;
+  }
+  .feature:nth-of-type(odd) .feature__content {
+    margin-right: 6rem;
+  }
+  .feature:nth-of-type(even) .feature__content {
+    margin-left: 6rem;
+  }
+}
+
+/* Showcase block */
+
+.showcase--block {
+  gap: 4rem;
+}
+
+.showcase__heading {
+  color: #fff;
+  font-weight: bold;
+  margin-top: 0;
+  margin-bottom: 4rem;
+}
+
+.showcase__image {
+  width: 100%;
+}
+
+/*Footer */
+
+.footer {
+  background: #232323;
+}
+
+.footer__section {
+  padding: 2rem;
+  border-bottom: 1px solid #393939;
+}
+
+.footer__section .list {
+  margin-top: 0;
+  line-height: 6rem;
+}
+
+.footer__heading {
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.footer__brand {
+  text-align: center;
+  margin-top: 5rem;
+}
+.footer__brand img {
+  width: 100%;
+  max-width: 230px; /*this is the original width of the image so it won't get bigger than that*/
+}
+.footer__copyrigth {
+  font-size: 2.1rem;
+  color: #5b5b5b;
+}
+
+.footer a {
+  color: #6f6f6f;
+  transition: color 0.3s;
+}
+
+.footer a:hover {
+  color: #fff;
+}
+
+@media screen and (min-width: 768px) {
+  .footer__grid {
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+  }
+  .footer .collapsible__chevron {
+    display: none;
+  }
+  .footer .collapsible__content {
+    max-height: 100%;
+    opacity: 1;
+  }
+
+  .footer__section {
+    border: 0;
+  }
+  .footer__section .list {
+    line-height: 4rem;
+  }
+  .footer__heading {
+    font-size: 1.6rem;
+  }
+  .footer__brand {
+    order: -1;
+  }
+  .footer__copyrigth {
+    font-size: 1.5rem;
+  }
+}
+
+
+/*# sourceMappingURL=/styles.df88efc0.css.map */
