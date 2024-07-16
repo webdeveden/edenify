@@ -31,7 +31,6 @@ body {
   color: var(--color-body);
   line-height: 1.5; /*1.5 of the font-size*/
   font-size: 2.4rem;
-  margin-bottom: 10rem;
 }
 
 h1,
@@ -322,12 +321,6 @@ a {
   overflow: hidden;
 }
 
-.card-container {
-  width: 40%;
-  display: flex;
-  flex-direction: row;
-}
-
 .card__header,
 .card__body {
   padding: 2rem 3rem;
@@ -384,13 +377,13 @@ a {
   white-space: nowrap;
 }
 .plan {
-  transition: transform 1s ease-out;
+  transition: transform 0.2s ease-out;
 }
 .plan:hover {
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
 .plan--popular:hover {
-  transform: scale(1.3);
+  transform: scale(1.15);
 }
 /*implimenting the popular image in our card , create a plan--popular class on plan level */
 .plan--popular .card__header {
@@ -408,7 +401,7 @@ a {
 
 @media screen and (min-width: 1024px) {
   .plan--popular {
-    transform: scale(1.2);
+    transform: scale(1.1);
   }
   .plan__name {
     font-size: 1.4rem;
@@ -501,7 +494,7 @@ a {
 /*Testimonial */
 
 .testimonial--container {
-  padding: 3rem 4rem;
+  padding: 3rem;
 }
 
 .testimonial__image-container {

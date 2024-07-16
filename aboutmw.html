@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About me</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/aboutme.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script
+      src="https://kit.fontawesome.com/50b979a1db.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <nav class="nav collapsible collapsible--expanded container">
+        <a class="nav__brand" href="#"
+          ><img src="./images/header-logo.svg" alt=""
+        /></a>
+        <svg class="icon icon--white nav__toggler">
+          <use href="../images/sprite.svg#menu"></use>
+        </svg>
+        <ul class="list nav__list collapsible__content">
+          <li class="nav__item"><a href="#section1">Home</a></li>
+          <li class="nav__item"><a href="#section2">About</a></li>
+          <li class="nav__item"><a href="#section3">Service</a></li>
+          <li class="nav__item"><a href="#section4">Portfolio</a></li>
+          <li class="nav__item"><a href="#section5">Resume</a></li>
+          <li class="nav__item"><a href="#section6">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section
+      id="section1"
+      class="hero hero--primary grid grid--1x2 container hero-first"
+    >
+      <div data-aos="fade-right">
+        <span class="hero__tagline"> Hello, Welcome</span>
+        <h1 class="hero__heading">I'm Eden Abwe</h1>
+        <p class="hero__text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora at
+          aliquid rerum officiis repellendus quaerat perspiciatis nam nihil
+          ipsum quasi!
+        </p>
+        <a href="#" class="btn btn--primary">Contact Us</a>
+      </div>
+      <div data-aos="fade-left">
+        <img
+          src="./images/testimonial.jpg"
+          alt=""
+          class="hero__image hero-image__rigth"
+        />
+      </div>
+    </section>
+    <div id="section2" class="hero hero--secondary">
+      <section class="grid grid--1x2 container">
+        <div data-aos="fade-right">
+          <img
+            src="./images/testimonial.jpg"
+            alt="My profile"
+            class="hero__image hero-image__left"
+          />
+        </div>
+        <div data-aos="fade-left">
+          <h2>About <span class="hero-secondary__heading">Me</span></h2>
+          <p class="hero-secondary__text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora at
+            aliquid rerum officiis repellendus quaerat perspiciatis nam nihil
+            ipsum quasi! Lorem ipsum dolor sit amet, consectetur adipisicing
+            elit. Dolor, iusto!
+          </p>
+          <a href="#" class="btn btn--primary">Contact Us</a>
+        </div>
+      </section>
+    </div>
+    <section id="section3" class="hero hero__container container">
+      <section>
+        <h2>My <span class="hero-secondary__heading">Service</span></h2>
+        <p class="hero-service__text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus
+          molestias dolores obcaecati numquam consequuntur iste amet explicabo
+          maiores velit possimus.
+        </p>
+      </section>
+      <div class="grid grid--1x3" data-aos="flip-left">
+        <article class="hero__box">
+          <svg class="icon icon--primary">
+            <use xlink:href="../images/sprite.svg#clock"></use>
+          </svg>
+          <h3>Mobile App Developement</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque ea
+            quo incidunt, commodi cumque harum excepturi recusandae dolor
+            tenetur aperiam repellendus sit maxime nam, distinctio voluptatem,
+            necessitatibus atque esse molestiae?
+          </p>
+        </article>
+        <article class="hero__box">
+          <svg class="icon icon--primary">
+            <use xlink:href="../images/sprite.svg#clock"></use>
+          </svg>
+          <h3>IT Field Technician</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore
+            adipisci, nihil aut qui officiis iure repellat consectetur
+            voluptatibus suscipit quis, totam praesentium nostrum fuga, beatae
+            expedita illo ullam ea? Quam!
+          </p>
+        </article>
+        <article class="hero__box">
+          <svg class="icon icon--primary">
+            <use xlink:href="../images/sprite.svg#clock"></use>
+          </svg>
+          <h3>Web Developement</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam
+            eaque repellat, repudiandae dignissimos quas similique animi sed
+            maxime rem quos! Architecto doloribus perferendis similique sit
+            ratione a minima molestias error!
+          </p>
+        </article>
+      </div>
+    </section>
+    <div id="section4" class="hero hero--secondary">
+      <section class="block__header container">
+        <h2 class="block__heading">
+          My <span class="hero-secondary__heading">Portfolio</span>
+        </h2>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis
+          rerum molestiae repudiandae, in eum sed itaque saepe eius doloremque
+          consequuntur?
+        </p>
+      </section>
+      <section class="grid grid--2x4 container">
+        <img
+          src="./images2/resized/pc3@2x.jpg"
+          alt="a computer"
+          class="block__image1"
+        />
+        <img
+          src="./images2/resized/pc4@2x.jpg"
+          alt="a computer"
+          class="block__image2"
+        />
+        <img
+          src="./images2/resized/pc5@2x.jpg"
+          alt="a computer"
+          class="block__image3"
+        />
+        <img
+          src="./images2/resized/pc6@2x.jpg"
+          alt="a computer"
+          class="block__image4"
+        />
+        <img
+          src="./images2/resized/pc8@2x.jpg"
+          alt="a computer"
+          class="block__image5"
+        />
+      </section>
+    </div>
+    <section id="section5" class="hero hero__container container">
+      <section>
+        <h2>My <span class="hero-secondary__heading">Experiences</span></h2>
+        <p class="hero-service__text">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel eum vero
+          nihil fugit libero iure cum tenetur a expedita beatae?
+        </p>
+      </section>
+      <div class="grid grid--1x3" data-aos="flip-right">
+        <article class="hero__experience">
+          <h5>June-2020-2022</h5>
+          <h4 class="hero-secondary__heading">Mobile App Developement</h4>
+          <span>React Native</span>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus
+            velit deserunt reiciendis magni quia nobis, repudiandae atque in
+            pariatur illo ullam similique doloremque hic at unde? Aut dicta
+            vitae deserunt.
+          </p>
+        </article>
+        <article class="hero__experience">
+          <h5>April-2022-2024</h5>
+          <h4 class="hero-secondary__heading">IT Field Technician</h4>
+          <span>CCNA Certified</span>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam
+            quia, reprehenderit, ex accusamus illo ducimus hic iusto sint,
+            doloremque iste necessitatibus id quis asperiores! Ad maxime ipsa
+            deserunt repudiandae facere.
+          </p>
+        </article>
+        <article class="hero__experience">
+          <h5>January-2023-2024</h5>
+          <h4 class="hero-secondary__heading">Web Developement</h4>
+          <span>HTML, CSS, JavaScript</span>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis
+            laudantium quo iusto esse neque suscipit quod praesentium harum
+            odit, perferendis et architecto quia consequatur, ratione sunt
+            itaque reprehenderit sequi eius.
+          </p>
+        </article>
+      </div>
+    </section>
+    <article id="section6" class="hero hero--secondary">
+      <section class="block__header container">
+        <h2 class="block__heading">
+          Contact <span class="hero-secondary__heading">Me</span>
+        </h2>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis
+          rerum molestiae repudiandae, in eum sed itaque saepe eius doloremque
+          consequuntur?
+        </p>
+      </section>
+      <section class="grid grid--1x2 container">
+        <div>
+          <div class="footer-contact-info">
+            <h5>
+              <span class="footer-contact-info__name">Address: </span>
+            </h5>
+            <p>4020 W Mill Rd Milwaukee, WI 53209 United States</p>
+          </div>
+          <div class="footer-contact-info">
+            <h5>
+              <span class="footer-contact-info__name">Phone: </span>
+            </h5>
+            <p>+1 414-888-2898</p>
+          </div>
+          <div class="footer-contact-info">
+            <h5>
+              <span class="footer-contact-info__name">E-mail: </span>
+            </h5>
+            <p>eden@eden.com</p>
+          </div>
+          <div class="footer-contact-info">
+            <h5>
+              <span class="footer-contact-info__name">Website: </span>
+            </h5>
+            <p>www.abcd.xyz.com</p>
+          </div>
+        </div>
+        <div class="input-group">
+          <form>
+            <div class="form-group">
+              <input
+                type="text"
+                placeholder="Name"
+                maxlength="255"
+                class="input-text"
+              />
+            </div>
+            <textarea
+              placeholder="Message"
+              cols="60"
+              rows="6"
+              maxlength="255"
+              class="input-text"
+            ></textarea>
+          </form>
+          <a href="#" class="btn btn--primary">Contact Us</a>
+        </div>
+      </section>
+    </article>
+    <footer class="hero--secondary footer-hero">
+      <section class="block__header footer-container">
+        <img src="./images/footer-logo.svg" alt="a logo image" />
+        <p class="footer-text">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi
+          fugiat impedit nulla veritatis dolores praesentium expedita voluptate
+          magnam? Porro animi iure, quibusdam quae atque ipsam aspernatur eos
+          similique quisquam incidunt.
+        </p>
+        <span class="footer--icons">
+          <a href="#">
+            <i
+              class="fa-brands footer-icon fa-linkedin"
+              style="color: rgb(234, 179, 8)"
+            ></i>
+          </a>
+          <a href="#">
+            <i
+              class="fa-brands footer-icon fa-twitter"
+              style="color: rgb(234, 179, 8)"
+            ></i>
+          </a>
+          <a href="#">
+            <i
+              class="fa-brands footer-icon fa-instagram"
+              style="color: rgb(234, 179, 8)"
+            ></i>
+          </a>
+          <a href="#">
+            <i
+              class="fa-brands footer-icon fa-youtube"
+              style="color: rgb(234, 179, 8)"
+            ></i>
+          </a>
+          <a href="#">
+            <i
+              class="fa-brands footer-icon fa-facebook"
+              style="color: rgb(234, 179, 8)"
+            ></i>
+          </a>
+        </span>
+      </section>
+    </footer>
+    <script src="./js/main.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
