@@ -25,7 +25,7 @@
           ><img src="./images/header-logo.svg" alt=""
         /></a>
         <svg class="icon icon--white nav__toggler">
-          <use href="../images/sprite.svg#menu"></use>
+          <use href="./images/sprite.svg#menu"></use>
         </svg>
         <ul class="list nav__list collapsible__content">
           <li class="nav__item"><a href="#section1">Home</a></li>
@@ -49,7 +49,7 @@
           aliquid rerum officiis repellendus quaerat perspiciatis nam nihil
           ipsum quasi!
         </p>
-        <a href="#" class="btn btn--primary">Contact Us</a>
+        <a href="#section6" class="btn btn--primary">Contact Us</a>
       </div>
       <div data-aos="fade-left">
         <img
@@ -76,7 +76,7 @@
             ipsum quasi! Lorem ipsum dolor sit amet, consectetur adipisicing
             elit. Dolor, iusto!
           </p>
-          <a href="#" class="btn btn--primary">Contact Us</a>
+          <a href="#section6" class="btn btn--primary">Contact Us</a>
         </div>
       </section>
     </div>
@@ -92,7 +92,7 @@
       <div class="grid grid--1x3" data-aos="flip-left">
         <article class="hero__box">
           <svg class="icon icon--primary">
-            <use xlink:href="../images/sprite.svg#clock"></use>
+            <use xlink:href="./images/sprite.svg#clock"></use>
           </svg>
           <h3>Mobile App Developement</h3>
           <p>
@@ -104,7 +104,7 @@
         </article>
         <article class="hero__box">
           <svg class="icon icon--primary">
-            <use xlink:href="../images/sprite.svg#clock"></use>
+            <use xlink:href="./images/sprite.svg#clock"></use>
           </svg>
           <h3>IT Field Technician</h3>
           <p>
@@ -116,7 +116,7 @@
         </article>
         <article class="hero__box">
           <svg class="icon icon--primary">
-            <use xlink:href="../images/sprite.svg#clock"></use>
+            <use xlink:href="./images/sprite.svg#clock"></use>
           </svg>
           <h3>Web Developement</h3>
           <p>
@@ -250,12 +250,13 @@
           </div>
         </div>
         <div class="input-group">
-          <form>
+          <form class="input-control">
             <div class="form-group">
               <input
                 type="text"
                 placeholder="Name"
                 maxlength="255"
+                required
                 class="input-text"
               />
             </div>
@@ -264,10 +265,11 @@
               cols="60"
               rows="6"
               maxlength="255"
+              required
               class="input-text"
             ></textarea>
+            <button class="btn btn--primary" type="submit">Send Request</button>
           </form>
-          <a href="#" class="btn btn--primary">Contact Us</a>
         </div>
       </section>
     </article>

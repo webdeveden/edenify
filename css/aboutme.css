@@ -304,6 +304,7 @@ h6 {
   border: 0;
   font-size: 1.6rem;
   font-weight: 400;
+  cursor: pointer;
 }
 
 .btn--primary {
@@ -329,7 +330,7 @@ h6 {
 
 /*Form and input */
 .input-group {
-  padding: 1.5rem 0;
+  padding: 2rem 0;
   max-width: 100%;
 }
 
@@ -366,7 +367,7 @@ h6 {
 }
 
 .footer-icon {
-  margin-right: 2rem;
+  margin-right: 1.5rem;
   font-size: 2.5rem;
 }
 .footer-contact-info {
