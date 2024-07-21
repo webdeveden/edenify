@@ -10,6 +10,11 @@
   "license": "ISC",
   "description": "",
   "devDependencies": {
-    "parcel-bundler": "^1.12.5"
+    "htmlnano": "^2.1.1",
+    "parcel-bundler": "^1.12.5",
+    "posthtml": "^0.16.6"
+  },
+  "htmlnano": {
+    "minifySvg": false
   }
 }
